@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IconFinder</string>
+    <string name="search_hint">Search icons here</string>\
+    <string name="Search_icons_here">Search icons here</string>
+    <string name="No_icons_found">No icons found</string>
+</resources>

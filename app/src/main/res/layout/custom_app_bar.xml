@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint="@android:color/white"
+        android:src="@drawable/icon_finder"
+        android:layout_marginTop="10dp"
+        android:id="@+id/appIconImageView"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/appTitle"
+        android:layout_toRightOf="@+id/appIconImageView"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/appIconImageView"
+        android:paddingLeft="12dp"
+        android:paddingRight="0dp" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/searchIconEt"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textCursorDrawable="@null"
+        android:layout_marginBottom="4dp"
+        android:textColor="@android:color/white"
+        android:layout_margin="8dp"
+        android:hint="@string/search_hint"/>
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:id="@+id/searchBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_search"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:id="@+id/crossBtn"
+        app:srcCompat="@drawable/ic_cross"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_name" />
+
+
+</RelativeLayout>
